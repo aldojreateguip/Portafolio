@@ -1,0 +1,168 @@
+:root {
+  --height: 50px;
+  --width: 200px;
+  --btn-height: 35px;
+  --btn-width: 300px;
+  --btn-color-base: #000;
+  --btn-color-hover: #000;
+  --btn-border-color: #000;
+  --border-radius: 5rem;
+  --border: 1px solid var(--btn-border-color);
+}
+
+.social-btn-group {
+  height: 80%;
+  width: 100%;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 10%;
+  padding-bottom: 0.5rem;
+}
+
+.social-btn {
+  border-radius: var(--border-radius);
+  height: var(--btn-height);
+  line-height: var(--btn-height);
+  width: var(--btn-width);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem !important;
+  display: flex !important;
+  justify-content: center;
+  cursor: pointer !important;
+}
+
+.social-btn i {
+  border: none;
+}
+
+.social-btn p {
+  text-decoration: none;
+  margin: 0px 10px;
+}
+
+.social-btn.btn-twitter {
+  --btn-color-base: #55ACEE;
+  --btn-border-color: #2795E5;
+  --border: 1px solid var(--btn-border-color);
+  background: var(--btn-color-base);
+  border: var(--border);
+}
+
+.social-btn.btn-twitter:hover {
+  --btn-color-hover: #2795E5;
+  background: var(--btn-color-hover);
+}
+
+.social-btn.btn-google {
+  --btn-color-base: #DD4B39;
+  --btn-border-color: #C23321;
+  --border: 1px solid var(--btn-border-color);
+  background: var(--btn-color-base);
+  border: var(--border);
+}
+
+.social-btn.btn-google:hover {
+  --btn-color-hover: #C23321;
+  background: var(--btn-color-hover);
+}
+
+.social-btn.btn-facebook {
+  --btn-color-base: #3B5998;
+  --btn-border-color: #2D4373;
+  --border: 1px solid var(--btn-border-color);
+  background: var(--btn-color-base);
+  border: var(--border);
+}
+
+.social-btn.btn-facebook:hover {
+  --btn-color-hover: #2D4373;
+  background: var(--btn-color-hover);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.button {
+  margin-top: 20px;
+  margin-left: 25%;
+  position: relative;
+  width: calc(0.8 * var(--width));
+  height: calc(0.7 * var(--height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0, 0.22, 0.3, 1);
+  border: 1px solid #fff;
+  border-radius: 2em;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+.button span {
+  color: #fff;
+  font-size: 18px;
+  z-index: 10;
+  letter-spacing: 2px;
+}
+.button._1 {
+  background: #2980b9;
+}
+.button._2 {
+  background: #388E3C;
+}
+.button._3 {
+  background: #16a085;
+}
+.button._4 {
+  background: #e74c3c;
+}
+.button .back {
+  position: absolute;
+  width: 0;
+  height: 0;
+  filter: url(#filter);
+  border-radius: 50%;
+  z-index: 5;
+  transition: all 2.5s cubic-bezier(0.1, 0.22, 0.3, 1);
+}
+.button._1 .back {
+  left: -50%;
+  top: -50%;
+  background: #27ae60;
+}
+.button._2 .back {
+  right: -50%;
+  top: -50%;
+  background: #1279ff;
+}
+.button._3 .back {
+  left: -50%;
+  bottom: -50%;
+  background: #34495e;
+}
+.button._4 .back {
+  right: -50%;
+  bottom: -50%;
+  background: #2980b9;
+}
+.button:hover .back {
+  width: calc(2 * var(--width));
+  height: calc(2 * var(--height));
+}
+
+/*# sourceMappingURL=app.css.map */
